@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+  
+}
+body{
+    background-image: url(./image/background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+  
+  color: #fff;
+  padding: 16px;
+  width: 40%;
+  margin: 64px auto;
+  border-radius: 10px;
+ 
+  
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  border: none;
+  color: #fff;
+  outline: none;
+  background-color: transparent;
+  padding: 8px 40px;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #fff;
+ 
+
+}
+
+.weather-search {
+  position: relative;
+}
+.weather-search i {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+
+.weather-units{
+    font-size: 24px;
+}
+.weather-units span{
+    cursor: pointer;
+}
+
+.weather-units-celsius{
+    margin-right: 8px;
+}
+
+.weather-body{
+    text-align: center;
+    margin-top: 48px;
+}
+
+.weather-datetime{
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.weather-forecast{
+    background-color: transparent;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+}
+
+.weather-minmax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.weather-minmax p{
+display: flex;
+justify-content: center;
+margin-left: 10px;
+
+
+}
+
+.weather-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr   );
+    grid-gap: 16px;
+    margin-top: 48px;
+    margin-left: 5rem;
+}
+
+.weather-card{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.weather-card i{
+    font-size: 24px;
+    margin-right: 1rem;
+}
+
+.weather-card p{
+    font-size: 14px;
+}
+
+@media(max-width: 1264px){
+    .weather-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left:0;
+    }
+   
+}
+
+
+
+
+
